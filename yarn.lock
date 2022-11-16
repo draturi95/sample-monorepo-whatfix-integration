@@ -7093,6 +7093,16 @@ last-call-webpack-plugin@^3.0.0:
     lodash "^4.17.5"
     webpack-sources "^1.1.0"
 
+leap-creator-react-native@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/leap-creator-react-native/-/leap-creator-react-native-1.5.10.tgz#5a60c989fcbbb6097ecae42b1219902c846de354"
+  integrity sha512-WOJ1wPZ9XTVPUsvRe5JgWahEdat+PXdUS6WAnrSSazncuK8EQBCh9fM8C/kglnJ4nEqC8G2iDTNqMBJ1X7ya1Q==
+
+leap-react-native@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/leap-react-native/-/leap-react-native-1.5.10.tgz#91e30033ed9156e593aec1059f5420f838e39300"
+  integrity sha512-KimrayEdZytV6Zn0mmkHONttdryfLmL1VYRLHrwxAeDcY4W7WUAdsiHseACROE28YmNqL/OoUY0Qz3PJCfJNWg==
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"

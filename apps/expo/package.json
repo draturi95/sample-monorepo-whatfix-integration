@@ -4,6 +4,8 @@
     "expo": "^46.0.0",
     "expo-splash-screen": "~0.16.1",
     "expo-status-bar": "~1.4.0",
+    "leap-creator-react-native": "1.5.10",
+    "leap-react-native": "1.5.10",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
