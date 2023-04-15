@@ -54,7 +54,11 @@ jobs:
       - name: Build android version
         run: |
           ls
-          cd apps/expo/android
+          cd apps
+          ls 
+          cd expo 
+          ls 
+          cd android 
           ls && chmod +x ./gradlew && ./gradlew assembleRelease --no-daemon
 
       - name: Check if app-release.apk build is actually present
