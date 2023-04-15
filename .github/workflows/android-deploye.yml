@@ -16,6 +16,11 @@ env:
   APP_NAME: ${{ 'Dhawal Raturi/APP_THIS' }}
   UPLOAD_FILE: ${{ 'apps/expo/android/app/build/outputs/apk/release/app-release.apk' }}
   TESTING_GROUP: ${{ 'TESTING' }}
+  SIGNING_KEY_BASE64: ${{secrets.SIGNING_KEY_BASE64}}
+  SIGNING_KEY_ALIAS: ${{secrets.SIGNING_KEY_ALIAS}}
+  SIGNING_STORE_PASSWORD: ${{secrets.SIGNING_STORE_PASSWORD}}
+  SIGNING_KEY_PASSWORD: ${{secrets.SIGNING_KEY_PASSWORD}}
+
 jobs:
   build-android:
     name: Build Android
