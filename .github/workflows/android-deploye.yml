@@ -35,7 +35,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Install dependencies
-        run: yarn
+        run: yarn && ls
 
       - name: Cache Gradle Wrapper
         uses: actions/cache@v2
