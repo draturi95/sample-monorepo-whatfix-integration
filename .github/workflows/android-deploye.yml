@@ -52,7 +52,7 @@ jobs:
             ${{ runner.os }}-gradle-caches-
 
       - name: Build android version
-        run: chmod +x ./gradlew && ./gradlew assembleRelease
+        run: chmod +x ./gradlew && ./gradlew assembleRelease --no-daemon
         working-directory: apps/expo/android
 
       - name: Check if app-release.apk build is actually present
