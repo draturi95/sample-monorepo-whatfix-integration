@@ -53,11 +53,11 @@ jobs:
 
       - name: Build android version
         run: chmod +x ./gradlew && ./gradlew assembleRelease --no-daemon
-        working-directory: apps/expo/android
+        working-directory: /apps/expo/android
 
       - name: Check if app-release.apk build is actually present
         run: cd app/build/outputs/apk/release/ && ls
-        working-directory: apps/expo/android
+        working-directory: /apps/expo/android
 
       - name: Sign Testing APK
         id: sign_app
