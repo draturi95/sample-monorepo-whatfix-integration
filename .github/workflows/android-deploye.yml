@@ -2,14 +2,8 @@ name: Deploy Android Testing
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    types: [closed]
-    branches:
-      - main
-    conditions:
-      - merged
+    tags:
+      - 'expo/android/v[0-9]+.[0-9]+.[0-9]'
 
 env:
   APP_CENTER_TOKEN: ${{ secrets.APP_CENTER_TOKEN}}
