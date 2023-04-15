@@ -93,6 +93,7 @@ jobs:
         with:
           name: Signed App Bundle
           path: ${{steps.sign_app.outputs.signedReleaseFile}}
+          retention-days: 7
 
       - name: Upload to App Center
         uses: wzieba/AppCenter-Github-Action@v1
