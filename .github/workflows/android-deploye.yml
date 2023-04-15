@@ -75,12 +75,19 @@ jobs:
           keyStorePassword: ${{ env.SIGNING_STORE_PASSWORD }}
           keyPassword: ${{ env.SIGNING_KEY_PASSWORD }}
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Signed App Bundle
+          path: ${{steps.sign_app.outputs.signedReleaseFile}}
+
       - name: Upload to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
           appName: ${{ env.APP_CENTER_TOKEN }}
           token: ${{ env.APP_CENTER_TOKEN }}
           group: ${{ env.TESTING_GROUP }}
-          file: ${{ env.UPLOAD_FILE }}
+          #   file: ${{ env.UPLOAD_FILE }}
+          file: ${{steps.sign_app.outputs.signedReleaseFile}}
           notifyTesters: true
           debug: false
