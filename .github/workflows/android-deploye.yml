@@ -13,7 +13,7 @@ on:
 
 env:
   APP_CENTER_TOKEN: ${{ secrets.APP_CENTER_TOKEN}}
-  APP_NAME: ${{ 'Dhawal Raturi/APP_THIS' }}
+  APP_NAME: ${{ secrets.APP_CENTER_APP_NAME }}
   UPLOAD_FILE: ${{ 'apps/expo/android/app/build/outputs/apk/release/app-release.apk' }}
   TESTING_GROUP: ${{ 'TESTING' }}
   SIGNING_KEY_BASE64: ${{secrets.SIGNING_KEY_BASE64}}
