@@ -51,9 +51,6 @@ jobs:
       #       restore-keys: |
       #         ${{ runner.os }}-gradle-caches-
 
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Build android version
         run: ls
           cd apps/expo/android
