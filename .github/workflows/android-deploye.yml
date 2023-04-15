@@ -39,6 +39,9 @@ jobs:
           java-version: 11
           distribution: 'adopt'
 
+      - uses: actions/setup-node@master
+      - uses: c-hive/gha-yarn-cache@v1
+
       - name: Install dependencies
         run: yarn && ls
 
