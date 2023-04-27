@@ -7,6 +7,7 @@ const Stack = createNativeStackNavigator<{
   home: undefined
   'user-detail': {
     id: string
+    name: string
   }
 }>()
 
